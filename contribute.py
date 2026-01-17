@@ -12,9 +12,9 @@ def main(def_args=sys.argv[1:]):
     args = arguments(def_args)
     curr_date = datetime.now()
     directory = 'repository-' + curr_date.strftime('%Y-%m-%d-%H-%M-%S')
-    repository = "https://github.com/sidz111/practice.git"
-    user_name = "sidz111"
-    user_email = "sssurwade2212@gmail.com"
+    repository = "https://github.com/codingwithsneha/grow-project.git"
+    user_name = "codingwithsneha"
+    user_email = "iamsneha@gmail.com"
     
     if repository is not None:
         start = repository.rfind('/') + 1
@@ -75,7 +75,7 @@ def arguments(argsval):
     parser.add_argument('-mc', '--max_commits', type=int, default=10)
     parser.add_argument('-fr', '--frequency', type=int, default=80)
     parser.add_argument('-r', '--repository', type=str)
-    parser.add_argument('-db', '--days_before', type=int, default=1065)
+    parser.add_argument('-db', '--days_before', type=int, default=620)
     parser.add_argument('-da', '--days_after', type=int, default=0)
     return parser.parse_args(argsval)
 
